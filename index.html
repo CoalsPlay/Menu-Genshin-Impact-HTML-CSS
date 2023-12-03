@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Genshin Impact HTML/CSS</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    
+    <aside class="aside__menu">
+      <div class="left__menu">
+
+        <label for="navToggle" class="btn__toggle">
+          <img class="img__toggle" src="./img/Icon_Paimon_Menu.webp" alt="Modo foto">
+        </label>
+
+        <div class="primary__options">
+
+          <a href="#">
+            <img class="icon__nav" src="./img/Icon_Photo_Mode.webp" alt="Modo foto">
+          </a>
+  
+          <a href="#">
+            <img class="icon__nav" src="./img/Icon_Notice.webp" alt="Noticias">
+          </a>
+
+          <a href="#">
+            <img class="icon__nav" src="./img/Icon_Mail.webp" alt="Correos">
+          </a>
+
+          <a href="#">
+            <img class="icon__nav" src="./img/Icon_Time.webp" alt="Temporizador">
+          </a>
+
+          <a href="#">
+            <img class="icon__nav" src="./img/Icon_Settings.webp" alt="Configuración">
+          </a>
+
+        </div>
+
+        <a href="#" class="btn__logout">
+          <img src="./img/bx-log-out.svg" alt="Modo foto">
+        </a>
+
+      </div>
+
+      <input type="checkbox" id="navToggle" checked>
+      <div class="right__menu">
+
+        <section class="user__info">
+          <div class="user__info__left">
+
+            <picture class="avatar__container">
+              <img src="./img/avatar.jpg" class="user__avatar" alt="Avatar">
+            </picture>
+
+            <span class="uid__badge">UID: 696969696</span>
+            
+            <a href="#" class="link__copy">
+              <img src="./img/bxs-copy.svg" alt="">
+              Copiar
+            </a>
+          </div>
+          <div class="user__info__right">
+            <div class="badge__info__container">
+              <h2 class="username">CoalsPlay</h2>
+              <a href="#" class="user__edit">
+                <div class="circle__alert">!</div>
+                <img src="./img/bxs-edit-alt.svg" alt="Editar usuario">
+              </a>
+            </div>
+            <p class="signature">
+              Sin firma
+            </p>
+
+            <div class="badge__info__container">
+              <h2 class="info__AR">Rango de Aventura</h2>
+              <span class="info__AR">60</span>
+            </div>
+
+            <div class="exp__adventure">
+              <img src="./img/EXP_de_Aventura.webp" alt="Icono Experiencia">
+
+              <div class="info__exp__container">
+                <div class="title__exp">
+                  <span>EXP de Aventura</span>
+                  <span>340125 / 340125</span>
+                </div>
+
+                <div class="bar__exp"></div>
+              </div>
+            </div>
+
+            <div class="badge__info__container">
+              <span class="info__world">Nivel de Mundo</span>
+              <span class="info__world align__info">
+                8
+                <img src="./img/bxs-info-circle.svg" alt="Información de mundo">
+              </span>
+            </div>
+
+            <div class="user__birthday">
+              <span class="info__birthday">Cumpleaños</span>
+              <span class="info__birthday">26 Oct</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="options__menu">
+          <a href="#" class="btn__menu">
+            <img src="./img/Icon_Shop.webp" alt="Tienda">
+            <h2 class="btn__title">Tienda</h2>
+          </a>
+          <a href="#" class="btn__menu">
+            <img src="./img/Icon_Party.webp" alt="Equipos">
+            <h2 class="btn__title">Equipos</h2>
+          </a>
+          <a href="#" class="btn__menu">
+            <img src="./img/Icon_Friends.webp" alt="Lista de amigos">
+            <h2 class="btn__title">Amigos</h2>
+          </a>
+          <a href="#" class="btn__menu">
+            <img src="./img/Icon_Achievements.webp" alt="Logros">
+            <h2 class="btn__title">Logros</h2>
+          </a>
+          <a href="#" class="btn__menu">
+            <img src="./img/Icon_Character.webp" alt="Personaje">
+            <h2 class="btn__title">Personajes</h2>
+          </a>
+          <a href="#" class="btn__menu">
+            <img src="./img/Icon_Inventory.webp" alt="Inventario">
+            <h2 class="btn__title">Inventario</h2>
+          </a>
+          <a href="#" class="btn__menu">
+            <div class="circle__alert">!</div>
+            <img src="./img/Icon_Missions.webp" alt="Misiones">
+            <h2 class="btn__title">Misiones</h2>
+          </a>
+          <a href="#" class="btn__menu">
+            <img src="./img/Icon_Archive.webp" alt="Archivo">
+            <h2 class="btn__title">Archivo</h2>
+          </a>
+          <a href="#" class="btn__menu">
+            <img src="./img/Icon_Map.webp" alt="Mapa">
+            <h2 class="btn__title">Mapa</h2>
+          </a>
+          <a href="#" class="btn__menu">
+            <img src="./img/Icon_Events.webp" alt="Eventos">
+            <h2 class="btn__title">Eventos</h2>
+          </a>
+          <a href="#" class="btn__menu">
+            <img src="./img/Icon_BP.webp" alt="Pase de batalla">
+            <h2 class="btn__title">Pase de Batalla</h2>
+          </a>
+        </section>
+
+        <footer class="copy__footer">
+          Menú de Genshin Impact con HTML y CSS &copy;<br> 
+          Desarrollado por: <a href="https//x.com/CoalsPlay">CoalsPlay</a>
+        </footer>
+
+      </div>
+      
+    </aside>
+
+    <!-- JS -->
+    <script>
+      const inputToggle = document.querySelector('#navToggle');
+      const btnToggle = document.querySelector('.img__toggle');
+
+      btnToggle.addEventListener('click', () => {
+        inputToggle.checked === false
+        ? btnToggle.setAttribute('src', './img/Icon_Paimon_Menu.webp')
+        : btnToggle.setAttribute('src', './img/Icon_back.webp');
+      });
+    </script>
+  </body>
+</html>
